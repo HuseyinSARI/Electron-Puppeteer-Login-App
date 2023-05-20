@@ -1,0 +1,38 @@
+{
+  "name": "Electron-Puppeteer-Login-App",
+  "version": "1.0.0",
+  "description": "Electron Puppeteer Login App",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "keywords": [
+    "electron",
+    "electronjs",
+    "puppeteer",
+    "login",
+    "ipc",
+    "ipcMain",
+    "ipcRender",
+    "bot"
+  ],
+  "author": "https://github.com/HuseyinSARI",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "electron": "^24.3.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "puppeteer": "^20.2.1"
+  }
+}
+
+

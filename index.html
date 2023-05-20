@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta 
+    http-equiv="Content-Security-Policy" 
+    content="default-src 'self'; 
+      script-src 'self'; 
+      font-src 'self' https://fonts.gstatic.com;
+      style-src 'self' https://fonts.googleapis.com;"        
+      />
+
+    <title>Electron Puppeteer Login App</title>    
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen">
+        <div class="screen__content">
+          <form class="login">
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input id="tcno" type="text" class="login__input" placeholder="TC No">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input id="sifre" type="password" class="login__input" placeholder="Password">
+            </div>
+            <button id="sendButton" class="button login__submit">
+              <span class="button__text">Log In </span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>				
+          </form>
+          <div class="social-login">
+            <h3>About</h3>
+            <div class="social-icons">
+              <a href="https://github.com/HuseyinSARI" class="social-login__icon fab fa-github">Github</a>
+              <a href="https://www.linkedin.com/in/sarihuseyin/" class="social-login__icon fab fa-linkedin-in">Linkedin</a>
+            </div>
+          </div>
+        </div>
+        <div class="screen__background">
+          <span class="screen__background__shape screen__background__shape4"></span>
+          <span class="screen__background__shape screen__background__shape3"></span>		
+          <span class="screen__background__shape screen__background__shape2"></span>
+          <span class="screen__background__shape screen__background__shape1"></span>
+        </div>		
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+
+  </body>
+</html>
